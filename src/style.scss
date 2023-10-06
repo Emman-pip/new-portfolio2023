@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 $first-color: #845ec2;
@@ -14,18 +15,51 @@ $third-color: #e0f4fd;
   align-items: center;
 }
 
+@mixin flexed($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 main {
   height: 200vh;
 }
 
 nav {
-  min-height: 2rem;
+  min-height: 1.5rem;
   background-color: $first-color;
-  @include flexedCenterCenter();
-  flex-direction: column;
+  // @include flexedCenterCenter();
 
   .topNavBar {
+    display: flex;
+    color: $third-color;
+    // @include flexedCenterCenter();
     padding: 2rem;
+    .leftSide {
+      @include flexed(flex-start, center);
+      width: 50%;
+      .circle {
+        margin-right: 1rem;
+        height: 1rem;
+        width: 1rem;
+        background-color: $second-color;
+        border-radius: 100%;
+      }
+    }
+    .rightSide {
+      width: 50%;
+      @include flexed(flex-end, center);
+      a {
+        padding: 1rem;
+        text-decoration: none;
+        color: $first-color;
+        background-color: $second-color;
+        border-radius: 1rem;
+      }
+      a:hover {
+        background-color: white;
+      }
+    }
   }
 }
 .bottomNavBar {
