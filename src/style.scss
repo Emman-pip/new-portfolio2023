@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$first-color: #845ec2;
+$second-color: #e0f4fd;
+$third-color: #e0f4fd;
+
+@mixin flexedCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 200vh;
+}
+
+nav {
+  min-height: 2rem;
+  background-color: $first-color;
+  @include flexedCenterCenter();
+  flex-direction: column;
+
+  .topNavBar {
+    padding: 2rem;
+  }
+}
+.bottomNavBar {
+  position: sticky;
+  top: 0;
+  // width: 90%;
+  background-color: $first-color;
+  @include flexedCenterCenter();
+
+  .forBorder {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+    border-top: 1px solid black;
+    width: 90%;
+  }
+
+  .navLink {
+    text-decoration: none;
+    color: $third-color;
+  }
+}
