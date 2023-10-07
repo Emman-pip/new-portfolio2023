@@ -117,9 +117,13 @@ nav .topNavBar .rightSide a:hover {
 }
 
 .section1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to bottom, transparent, #845ec2, #845ec2, #845ec2, transparent);
+  height: 100vh;
 }
 .section1 .container {
   padding: 1rem;

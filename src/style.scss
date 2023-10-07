@@ -8,7 +8,11 @@
 $first-color: #845ec2;
 $second-color: #e0f4fd;
 $third-color: #e0f4fd;
+
+// second pallette
 $green-color: #00c9a7;
+$pink-color: #f3c5ff;
+$pastel-color: #fefedf;
 
 @mixin flexedCenterCenter {
   display: flex;
@@ -132,7 +136,19 @@ nav {
 }
 
 .section1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   @include flexedCenterCenter();
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    $first-color,
+    $first-color,
+    $first-color,
+    transparent
+  );
+  // backdrop-filter: blur(0.2rem);
+  height: 100vh;
   .container {
     padding: 1rem;
     width: 50%;
