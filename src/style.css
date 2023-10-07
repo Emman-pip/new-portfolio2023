@@ -122,12 +122,20 @@ nav .topNavBar .rightSide a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, transparent, #845ec2, #845ec2, #845ec2, #845ec2, #845ec2, #845ec2, #845ec2);
+  gap: 0;
+  background: linear-gradient(to bottom, transparent, #845ec2, #845ec2, #845ec2, #845ec2, #845ec2, #845ec2, transparent);
   height: 120vh;
+}
+.section1 .group1,
+.section1 .group2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .section1 .container {
   padding: 1rem;
-  width: 30%;
+  width: 30rem;
 }
 .section1 .container .green {
   color: #00c9a7;
@@ -161,7 +169,6 @@ nav .topNavBar .rightSide a:hover {
 }
 
 .section2 {
-  background-image: linear-gradient(to bottom, #00c9a7, #00c9a7, #00c9a7, #00c9a7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,5 +180,5 @@ nav .topNavBar .rightSide a:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f3c5ff;
+  background: #f3c5ff;
 }/*# sourceMappingURL=style.css.map */
