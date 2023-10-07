@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 $first-color: #845ec2;
@@ -151,7 +152,8 @@ nav {
   height: 100vh;
   .container {
     padding: 1rem;
-    width: 50%;
+
+    width: 30%;
     .green {
       color: $green-color;
     }
@@ -172,8 +174,14 @@ nav {
     }
   }
   .pics {
-    background-color: $second-color;
-    height: 20vh;
-    width: 20%;
+    @include flexed(flex-start, center);
+    .pic1,
+    .pic2,
+    .pic3 {
+      height: 10rem;
+      width: 20rem;
+      background-color: $pastel-color;
+      outline: 1px solid black;
+    }
   }
 }
