@@ -1,8 +1,23 @@
+@font-face {
+  font-family: FiraRegular;
+  src: url("../fonts/Fira_Sans/FiraSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: FiraBold;
+  src: url("../fonts/Fira_Sans/FiraSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: UbuntuRegular;
+  src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: FiraRegular;
   scroll-behavior: smooth;
 }
 
@@ -13,6 +28,7 @@ $third-color: #e0f4fd;
 // second pallette
 $green-color: #00c9a7;
 $pink-color: #f3c5ff;
+$pink-light-color: #f3c5ff5f;
 $pastel-color: #fefedf;
 
 @mixin flexedCenterCenter {
@@ -48,6 +64,11 @@ nav {
     .leftSide {
       @include flexed(flex-start, center);
       width: 50%;
+      .name {
+        font-family: FiraBold;
+        font-weight: 1000;
+        font-size: 1.5rem;
+      }
       .circle {
         margin-right: 1rem;
         height: 1rem;
@@ -168,7 +189,7 @@ nav {
       color: $green-color;
     }
     .title {
-      font-family: sans-serif;
+      font-family: UbuntuRegular;
       padding: 1rem;
       background-color: black;
       color: $second-color;
@@ -213,5 +234,11 @@ nav {
 .section3 {
   @include flexedCenterCenter();
   height: 100vh;
-  background: $pink-color;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    $pink-light-color,
+    $pink-light-color,
+    transparent
+  );
 }

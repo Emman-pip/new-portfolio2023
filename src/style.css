@@ -1,8 +1,20 @@
+@font-face {
+  font-family: FiraRegular;
+  src: url("../fonts/Fira_Sans/FiraSans-Regular.ttf");
+}
+@font-face {
+  font-family: FiraBold;
+  src: url("../fonts/Fira_Sans/FiraSans-Bold.ttf");
+}
+@font-face {
+  font-family: UbuntuRegular;
+  src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: FiraRegular;
   scroll-behavior: smooth;
 }
 
@@ -26,6 +38,11 @@ nav .topNavBar .leftSide {
   justify-content: flex-start;
   align-items: center;
   width: 50%;
+}
+nav .topNavBar .leftSide .name {
+  font-family: FiraBold;
+  font-weight: 1000;
+  font-size: 1.5rem;
 }
 nav .topNavBar .leftSide .circle {
   margin-right: 1rem;
@@ -141,7 +158,7 @@ nav .topNavBar .rightSide a:hover {
   color: #00c9a7;
 }
 .section1 .container .title {
-  font-family: sans-serif;
+  font-family: UbuntuRegular;
   padding: 1rem;
   background-color: black;
   color: #e0f4fd;
@@ -180,5 +197,5 @@ nav .topNavBar .rightSide a:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f3c5ff;
+  background: linear-gradient(to bottom, transparent, rgba(243, 197, 255, 0.3725490196), rgba(243, 197, 255, 0.3725490196), transparent);
 }/*# sourceMappingURL=style.css.map */
