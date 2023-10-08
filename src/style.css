@@ -109,11 +109,12 @@ nav .topNavBar .rightSide a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .heroPage .picture .content {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 1rem;
 }
@@ -123,6 +124,7 @@ nav .topNavBar .rightSide a:hover {
 }
 .heroPage .picture .content .description {
   color: #e0f4fd;
+  text-align: center;
 }
 .heroPage .picture .content .contactMe {
   text-decoration: none;
