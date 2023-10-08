@@ -206,6 +206,7 @@ nav {
   }
   .pics {
     @include flexed(flex-start, center);
+
     .pic1,
     .pic2,
     .pic3 {
@@ -218,6 +219,7 @@ nav {
 }
 // dito lalagay credentials
 .section2 {
+  padding: 1rem;
   // background-image: linear-gradient(
   //   to bottom,
   //   transparent,
@@ -228,7 +230,28 @@ nav {
   //   transparent
   // );
   @include flexedCenterCenter();
+  flex-direction: row;
   height: 100vh;
+  text-align: center;
+  .container {
+    @include flexedCenterCenter();
+  }
+  font-size: 1.5rem;
+  color: $second-color;
+  .card {
+    padding: 1rem;
+    @include flexedCenterCenter();
+    flex-direction: column;
+    width: 40rem;
+    .pic1 {
+      // border: 2px solid $pink-light-color;
+      border-radius: 100%;
+      padding: 1rem;
+      img {
+        width: 40rem;
+      }
+    }
+  }
 }
 
 .section3 {

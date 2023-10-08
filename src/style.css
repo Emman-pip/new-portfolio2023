@@ -186,10 +186,35 @@ nav .topNavBar .rightSide a:hover {
 }
 
 .section2 {
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   height: 100vh;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #e0f4fd;
+}
+.section2 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section2 .card {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40rem;
+}
+.section2 .card .pic1 {
+  border-radius: 100%;
+  padding: 1rem;
+}
+.section2 .card .pic1 img {
+  width: 40rem;
 }
 
 .section3 {
